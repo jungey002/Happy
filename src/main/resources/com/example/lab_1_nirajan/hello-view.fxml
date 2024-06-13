@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="323.0" prefWidth="488.0" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab_1_nirajan.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Label fx:id="welcomeText" />
+    <Button onAction="#onHelloButtonClick" text="LOAD DATA " textFill="#ef0909">
+      <font>
+         <Font name="Bodoni MT Poster Compressed" size="36.0" />
+      </font></Button>
+   <TableView fx:id="tableView" prefHeight="200.0" prefWidth="200.0">
+     <columns>
+       <TableColumn fx:id="id" prefWidth="75.0" text="id" />
+       <TableColumn fx:id="name" prefWidth="75.0" text="name" />
+         <TableColumn fx:id="doctor" prefWidth="75.0" text="doctor" />
+         <TableColumn fx:id="room" prefWidth="75.0" text="room" />
+     </columns>
+   </TableView>
+</VBox>
